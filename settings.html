@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/extension.css" rel="stylesheet">
+    <title>Wii Shop Channel Music - Settings</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <button class="btn btn-sm btn-wii mt-3 w-100" id="music-toggle">...</button>
+
+        <label for="music-picker" class="mt-2 form-label">Music picker</label>
+        <select id="music-picker" multiple size="5" class="form-select w-100" multiple>
+            <option value="wii-shop-theme">Wii Shop Channel</option>
+            <option value="wii-shop-banner-theme">Wii Shop Channel (Menu)</option>
+            <option value="mii-channel-wii">Mii Channel (Wii)</option>
+            <option value="mii-channel-3ds">Mii Maker (3DS)</option>
+            <option value="wii-u-eshop-theme">Wii U eShop</option>
+            <option value="3ds-eshop-theme">3DS eShop</option>
+            <option value="dsi-shop-theme">DSi Shop</option>
+            <option value="coconut-mall">Coconut Mall</option>
+            <option value="wii-shop-wednesday">Wii Shop Wednesday</option>
+            <option value="oot-shop">Ocarina Of Time Shop</option>
+            <option value="sims-buy-mode">The Sims Buy Mode</option>
+        </select>
+
+        <label for="music-volume" class="mt-3 form-label">Music volume</label>
+        <input class="form-range" type="range" min="0" max="100" value="50" id="music-volume" />
+
+        <button class="btn btn-sm btn-wii mt-3 w-100" id="include-button">Include current site</button>
+
+        <button class="btn btn-sm btn-wii mt-2 w-100" id="exclude-button">Exclude current site</button>
+
+        <a href="settings-custom-sites.html">
+            <button class="btn btn-sm btn-wii mt-2 w-100" id="manage-custom-sites">Manage custom site settings</button>
+        </a>
+
+        <button class="btn btn-sm btn-wii mt-2 w-100" id="update-button">Update site list</button>
+
+        <!-- Links -->
+		<!--
+        <div class="small text-center mt-3 mb-3">
+            <a href="https://github.com/corbindavenport/wii-shop-extension/" target="_blank">GitHub Repository</a> •
+            <a href="https://discord.com/invite/59wfy5cNHw" target="_blank">Discord server</a>
+        </div>
+		-->
+
+    </div>
+	&nbsp;
+    <!-- <script src="js/bootstrap.bundle.js"></script> -->
+    <script src="js/popup.js"></script>
+
+</body>
+
+</html>
